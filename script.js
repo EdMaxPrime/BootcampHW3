@@ -4,7 +4,7 @@
 
 
 
-5) Give the section with an id of container the text "Hello!".
+
 6) Add the class main to the div with a class of footer.
 7) Remove the class main on the div with a class of footer.
 8) Create a new li element.
@@ -20,7 +20,7 @@ var containerElement = document.getElementById("container");
 console.log(containerElement);
 
 //2) Select the section with an id of container using querySelector.
-var containerSelect = document.querySelector("container");
+var containerSelect = document.querySelector("#container");
 console.log(containerSelect);
 
 //3) Select all of the list items with a class of "second".
@@ -28,6 +28,12 @@ var headerClass = document.getElementsByClassName('header');
 console.log(headerClass);
 
 //4) Select a list item with a class of third, but only the list item inside of the ol tag.
+var listItem = document.querySelector('ol .third');
+console.log(listItem);
 
+//5) Give the section with an id of container the text "Hello!"
+containerElement.innerHTML+="Hello!";
+
+//6) Add the class main to the div with a class of footer.
 
 
